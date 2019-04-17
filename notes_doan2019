@@ -1,0 +1,9 @@
+Template: https://coreui.io/vue/
+Plugins:
+- Chart: https://ecomfe.github.io/echarts-doc/public/en/index.html
+- Editor: https://ui.toast.com/tui-editor/
+- Jquery Validation: https://jqueryvalidation.org/
+- Datatable | EditTable: 
+https://datatables.net/
+https://markcell.github.io/jquery-tabledit/#examples
+- Element: https://element.eleme.io/#/en-US
