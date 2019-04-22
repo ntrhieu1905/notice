@@ -36,3 +36,5 @@ vd2: public function($blabla) {
         }
     }
 + Validate bên model. Query nếu nhiều điều kiện ở model. Sử dụng transaction với các trường hợp thêm/xóa/sửa.
+
+- Common: màn hình nếu master thì nếu sử dụng css js viết chung 1 file: common.js/css. Nếu màn hình(chức năng) riêng thì đặt theo thư mục: Admin/TenManHinh/TenManHinh.js/css
