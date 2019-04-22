@@ -8,3 +8,31 @@ https://datatables.net/
 https://markcell.github.io/jquery-tabledit/#examples
 - Element: https://element.eleme.io/#/en-US
 - Boostrap-Vue: https://bootstrap-vue.js.org/
+
+
+Notes:
+- Clean code: review/refactor theo chuẩn dưới đây:
++ Tên class phải là 1 danh từ, tên methods(function) phải là 1 động từ. Đặt tên theo tiếng anh cho gọn text. Và cố gắng đặt tên các methods dễ hiểu như:
+vd: public function getTypeUser()
++ Sử dụng Camelcase
+vd: Biến: $testCase - Function: function testFunction()
++ Constant quy định chung 1 file config.
+vd1: const TYPE_USER = [
+      0: Admin,
+      1: User,
+      2: Inventory,
+    ]
+vd2: trường hợp if(type == TYPE_USER_VAL['Admin'])) để set lấy value type = 0 thì tạo 1 constant: 
+const TYPE_USER_VAL = [
+      Admin: 0,
+      User: 1,
+      Inventory: 2,
+    ]
++ Theo format chung:
+vd1: mảng => [], ko dùng array().
+vd2: public function($blabla) {
+        if($check) {
+        ..........
+        }
+    }
++ Validate bên model. Query nếu nhiều điều kiện ở model. Sử dụng transaction với các trường hợp thêm/xóa/sửa.
