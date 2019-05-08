@@ -9,14 +9,18 @@ https://markcell.github.io/jquery-tabledit/#examples
 - Element: https://element.eleme.io/#/en-US
 - Boostrap-Vue: https://bootstrap-vue.js.org/
 
-
 Notes:
-- Clean code: review/refactor theo chuẩn dưới đây:
-+ Tên class phải là 1 danh từ, tên methods(function) phải là 1 động từ. Đặt tên theo tiếng anh cho gọn text. Và cố gắng đặt tên các methods dễ hiểu như:
-vd: public function getTypeUser()
-+ Sử dụng Camelcase
+Rules common
+== CLEAN CODE
+- Refactor code theo chuẩn dưới đây:
+@Tên class phải là 1 danh từ, tên methods(function) phải là 1 động từ. 
+Đặt tên theo tiếng anh cho gọn. Và cố gắng đặt tên các methods dễ hiểu như:
+vd: public function getListUser()
+
+@Sử dụng Camelcase
 vd: Biến: $testCase - Function: function testFunction()
-+ Constant quy định chung 1 file config.
+
+@Constant quy định chung 1 file config.
 vd1: const TYPE_USER = [
       0: Admin,
       1: User,
@@ -28,19 +32,33 @@ const TYPE_USER_VAL = [
       User: 1,
       Inventory: 2,
     ]
-+ Theo format chung:
-vd1: mảng => [], ko dùng array().
-vd2: public function($blabla) {
-        if($check) {
-        ..........
-        }
-    }
-+ Validate bên model. Query nếu nhiều điều kiện ở model. Sử dụng transaction với các trường hợp thêm/xóa/sửa.
 
-- Common: màn hình nếu master thì nếu sử dụng css js viết chung 1 file: common.js/css. Nếu màn hình(chức năng) riêng thì đặt theo thư mục: Admin/TenManHinh/TenManHinh.js/css
+@Style common: 
++ ES6 có rất nhiều cách viết khác nhau.
+vd: trong vue
+methods: {
+C1: foo: function($param) {
+	}
+C2: foo($param) {
+	}
+C3: foo: ($param) => {	
+	}
+}
+-> Sử dụng cách 2 or 3.
++ Căn lề tab và spaces: tab vô 2 spaces cho tất cả các file js, vue, php, css,...
 
-<------------------------------------------------------------------------>
-ROLES COMMON:
+@Sử dụng transaction khi update/edit/delete
++ Đặt trong try catch.
+
+@Về css chung thì trong: resoucres/assets/scss/
++ index.scss là import các file trong folder khi sử dụng
+Các folder:
++ base: các var chung
++ components: mỗi components nào cần thì css
+vd: category.scss. Và css chung cả hệ thống thì có file là common.scss
++ vendors: các thư viện thứ 3 
+
+== DB:
 1. Migration:
 - 7 field mặc định cho tất cả các bảng
 isDelete: null
