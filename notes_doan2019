@@ -61,6 +61,8 @@ vd: category.scss. Và css chung cả hệ thống thì có file là common.scss
 @Khác:
 - Hạn chế chừa dòng trống.
 - Viết code có comment bất kể chỗ nào.
+- Khi commit bỏ hết các lệnh debug, console và các dòng bị đóng comment(chưa sử dụng). Commit những file nào đã làm thôi nhé. Ko commit
+hết tất cả 1 mớ. Cân nhắc kĩ trc khi commit.
 
 == DB:
 1. Migration:
