@@ -58,6 +58,10 @@ Các folder:
 vd: category.scss. Và css chung cả hệ thống thì có file là common.scss
 + vendors: các thư viện thứ 3 
 
+@Khác:
+- Hạn chế chừa dòng trống.
+- Viết code có comment bất kể chỗ nào.
+
 == DB:
 1. Migration:
 - 7 field mặc định cho tất cả các bảng
