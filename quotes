@@ -1,0 +1,10 @@
+Kinh nghiệm phỏng vấn:
+- ReactJS:
+1. Phải nắm vững các cú pháp ES6/7, các thao tác với mảng và object phải biết map, filter, find, reduce. Biết await/async là lợi thế.
+2. Hiểu rõ bản chất props và state, life cycle, phân biệt được stateless và stateful component (hoặc smart và dump component).
+3. Tổ chức component phải rõ ràng, tách bạch khai báo styles, hình ảnh. Cách phân tích 1 component: có thể đưa bạn 1 hình ảnh màn hình bạn có thể nói được các thành phần bên trong và cách tổ chức chúng.
+4. Biết cách thao tác với Rest API: đây là bắt buộc. Hiểu được POST/GET/PUT, body data và header (token user).
+5. Biết xài Redux là 1 lợi thế: xin đừng nói bạn chỉ làm app nhỏ nên ko cần Redux, vì như thế chứng tỏ bạn chưa sẵn sàng để học cái mới hoặc 6 tháng qua với bạn chỉ là cưỡi ngựa xem hoa. Thậm chí công ty mình dùng MobX nên sẽ hỏi bạn có sãn sàng đổi qua MobX không.
+6. Đã biết sử dụng 1 số lib như React Router, Redux Thunk, Redux Saga, Axios ..
+7. Biết làm animation là lợi thế lớn.
+8. Bạn biết lập trình React Native là lợi thế rất lớn dù là iOS hoặc Android.
