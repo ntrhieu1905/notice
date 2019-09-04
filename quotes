@@ -8,3 +8,13 @@ Kinh nghiệm phỏng vấn:
 6. Đã biết sử dụng 1 số lib như React Router, Redux Thunk, Redux Saga, Axios ..
 7. Biết làm animation là lợi thế lớn.
 8. Bạn biết lập trình React Native là lợi thế rất lớn dù là iOS hoặc Android.
+
+SSR & CSR
+- CSR: 
++ Server sending response -> HTML -> Browser download JS,CSS -> Excute React -> Viewable and Interactable
+=> Server gửi phản hồi 1 file html trống đến browser, và browser sẽ tải các js,css. Sau đó thực thi với react, sau khi thực thi xong sẽ
+hiển thị nội dung và có thể tương tác được(với các chức năng)
+- SSR:
++ Server rendered response -> HTML bundle -> Browser render page(JS,CSS) + viewable -> Excute React -> Interactable
+=> Server sẽ quản lý việc render file html(có đầy đủ nội dung) về browser và hiển thị nội dung. Sau đó sẽ thực thi với react và có thể
+tương tác.
