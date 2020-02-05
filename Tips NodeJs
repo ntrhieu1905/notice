@@ -7,6 +7,7 @@ Tools and packages:
 
 + Tools:
 - https://account.mongodb.com/account/login
+- https://docs.mongodb.com/manual/reference/method/js-collection/
 
 Tutorial website:
 - https://codeburst.io/writing-a-crud-app-with-node-js-and-mongodb-e0827cbbdafb
