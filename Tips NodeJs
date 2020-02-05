@@ -3,6 +3,7 @@ Tools and packages:
 - express
 - body-parser
 - mongoose
+- dotenv
 
 + Tools:
 - https://account.mongodb.com/account/login
