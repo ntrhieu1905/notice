@@ -21,3 +21,6 @@ Tutorial website:
 
 GitHub tutorial nodejs
 - https://github.com/bradtraversy/node_passport_login
+
+Conventions(Quy ước):
+- Field name db: camelCase
