@@ -18,3 +18,12 @@ hiển thị nội dung và có thể tương tác được(với các chức n�
 + Server rendered response -> HTML bundle -> Browser render page(JS,CSS) + viewable -> Excute React -> Interactable
 => Server sẽ quản lý việc render file html(có đầy đủ nội dung) về browser và hiển thị nội dung. Sau đó sẽ thực thi với react và có thể
 tương tác.
+
+- Nodejs
+(https://www.facebook.com/groups/congdong.nodejs.vietnam/search/?query=debug%20npm&epa=SEARCH_BOX):
+sau khi làm việc 1 thời gian thì lý do để chọn nodejs cũng tương đối nhiều. Không tự nhiên mà thế giới nó đổ xô đi làm nodejs đâu.
+- Scripting language: tương đối dễ học nhưng khó để kiểm soát performance, có thể build 1 ông dev làm từ front-end, backend, cross-platform mobile.
+- Fetching data cực lợi thế khi nó support sẵn JSON, các bộ kết nối DB có sẵn cũng như thừa hưởng được bộ lib trên NPM để làm việc hiểu quả . Xử lý data cực gọn nhẹ, tất nhiên python thì nó vẫn có advance của nó.
+- Single-thread: nói nghe buồn cười nhưng cái này mới là cái chính vì thực tế single-thread của nodejs nó dựng lên nhờ V8 và cơ chế event loop để cho cái gọi là asynchronus(non-blocking). Cái này tương đối hiệu quả và không ngốn quá nhiều CPU.
+- Event handler: nghe có vẻ không liên quan nhưng trên thực tế event-handler của event-driven programming phù hợp với kiến trúc microservices hiện tại và tương lai.
+- Microservices: hệ thống bây giờ được sử dụng như SaaS, PaaS, IaaS, có kiến trúc là microservices được deploy trên các distributed server, nên ngôn ngữ đã dần không bị bắt buộc cho project nữa, project có thể code bằng nodejs để tiết kiệm tương đối thời gian làm backend, debug dễ dàng, chủ yếu là lấy market share.
